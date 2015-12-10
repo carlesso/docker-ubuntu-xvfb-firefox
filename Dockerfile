@@ -7,7 +7,7 @@ LABEL Description="Ruby 2.2.0 image with xorg and xvfb. Useful to run test with 
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y git vim curl wget links apache2 php5 php5-curl php5-mysql php5-mcrypt php5-gd xvfb firefox
-RUN apt-get install -y openjdk-7-jre-headless xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic imagemagick
+RUN apt-get install -y openjdk-7-jre-headless xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic imagemagick libffi-dev
 
 RUN apt-get install -y curl libxml2-dev libxslt-dev libcurl4-openssl-dev libreadline6-dev libssl-dev patch build-essential zlib1g-dev openssh-server libyaml-dev libicu-dev libmysqlclient-dev
 

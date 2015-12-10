@@ -1,6 +1,7 @@
 FROM ubuntu:15.10
 MAINTAINER coders51 <dev@coders51.com>
 
+
 LABEL Description="Ruby 2.2.2 image with xorg and xvfb. Useful to run test with selenium"
 
 ENV DEBIAN_FRONTEND noninteractive
